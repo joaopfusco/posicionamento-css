@@ -1,0 +1,36 @@
+Position (Absolute e Relative):
+
+No exemplo apresentado, exploramos os conceitos de position em CSS, que desempenham um papel fundamental no posicionamento preciso de elementos em uma página.
+
+Position: Relative:
+A classe .position-box com a classe .box1 possui position: relative. Isso permite ajustar sua posição em relação ao fluxo normal do documento usando as propriedades top, left, right e bottom. No exemplo, aplicamos position: relative juntamente com ajustes negativos de top e left na .box1. Isso move a caixa 1 para cima e para a esquerda em relação à sua posição original, mantendo o espaço ocupado no layout pelos outros elementos.
+
+Position: Absolute:
+A classe .position-box com a classe .box2 tem position: absolute. Isso faz com que a caixa 2 seja removida do fluxo normal do documento e posicionada em relação ao seu ancestral com uma posição não static (nesse caso, o próprio container). Através das propriedades top e right, ancoramos a caixa 2 no canto superior direito do container. Isso permite que a caixa 2 sobreponha outros elementos sem afetar seu posicionamento.
+
+Flex:
+
+Na seção do Flex, abordamos o uso da propriedade display: flex para criar layouts flexíveis e responsivos.
+
+Dentro da classe .flex-example, utilizamos display: flex para criar um contexto de layout flexível para as .flex-box. Isso permite que as caixas se ajustem automaticamente ao espaço disponível dentro do contêiner, alinhando-as horizontalmente usando justify-content: space-around e verticalmente usando align-items: center. As propriedades flex-grow, flex-shrink e flex-basis também podem ser usadas para controlar o dimensionamento das caixas flexíveis.
+
+-Flex-grow (flex: 0):
+
+O primeiro valor 0 define a capacidade de um item flexível para crescer em relação aos outros itens flexíveis no contêiner.
+Quando definido como 0, o item não crescerá, independentemente do espaço disponível.
+
+-Flex-shrink (flex: 0 0):
+
+O segundo valor 0 define a capacidade de um item flexível para encolher em relação aos outros itens flexíveis no contêiner.
+Quando definido como 0, o item não encolherá em relação aos outros itens quando o espaço for limitado.
+
+-Flex-basis (flex: 0 0 calc(33.33% - 20px)):
+
+O terceiro valor calc(33.33% - 20px) define o tamanho inicial preferido de um item flexível antes do espaço extra ser distribuído.
+calc(33.33% - 20px) calcula o tamanho em relação à largura total do contêiner. Ele define cada item para ocupar aproximadamente um terço da largura total do contêiner, subtraindo 20 pixels para acomodar margens ou espaçamento.
+
+Grid:
+
+A seção do Grid demonstra como usar a propriedade display: grid para criar layouts em grade.
+
+Dentro da classe .grid-example, aplicamos display: grid para transformar as .grid-box em um layout em grade. Usamos grid-template-columns para definir duas colunas de tamanho igual e grid-gap para adicionar espaçamento entre as células da grade. As caixas foram posicionadas automaticamente dentro das células da grade, tornando mais fácil e eficiente criar layouts complexos.
